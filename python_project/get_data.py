@@ -13,4 +13,4 @@ import pandas as pd
 dfs = pd.read_html('https://rate.bot.com.tw/xrt?Lang=zh-TW')
 currency = dfs[0]
 currency = currency.ix[:,0:5]
-print(currency)
+currency.to_excel('currency.xlsx')

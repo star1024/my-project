@@ -1,5 +1,7 @@
 # my-project
 
-sign_up為會員註冊小整理
+python_project為使用python爬蟲
 
-http://andy-yang-1024.lionfree.net/login.php  //此連結為註冊的作品
+
+sign_up為會員註冊
+http://andy-yang-1024.lionfree.net/login.php  //此會員註冊的作品

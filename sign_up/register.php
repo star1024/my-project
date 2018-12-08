@@ -1,14 +1,13 @@
 <?php
 
 $success = FALSE;
-// $con = mysqli_connect("localhost","root","","hahow");
 
-$conn = new mysqli("192.168.2.200", "andyyang", "h4Tu(qYEY*v711", "andyyang_member");
+$conn = new mysqli("host","username","password","dbname");
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-if (isset($_POST['name']) && isset($_POST['name']) && isset($_POST['password']) && isset($_POST['nick'])) {
+if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['password']) && isset($_POST['nick'])) {
 	$sql = "INSERT INTO member(name, email, password) VALUES ('".$_POST['name']."', '".$_POST['email']."', '".$_POST['password']."', '".$_POST['nick']."')";
 
 	if ($conn->query($sql) === TRUE) {
